@@ -8,7 +8,6 @@
 def group_anagrams(strings):
     anagram_groups = {}
 
-    # Loop through each string in the input list
     for string in strings:
         # Sort the characters in the string to form a sorted key
         sorted_string = ''.join(sorted(string))
