@@ -22,7 +22,6 @@ class MinHeap:
     ################################
 
     def insert(self, value):
-        # Add the new value to the end of the heap
         self.heap.append(value)
         current = len(self.heap) - 1
         
@@ -31,6 +30,7 @@ class MinHeap:
             self._swap(current, self._parent(current))
             current = self._parent(current)
  
+
 myheap = MinHeap()
 myheap.insert(12)
 myheap.insert(10)
