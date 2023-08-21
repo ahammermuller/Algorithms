@@ -8,6 +8,7 @@
 def rotate(nums, k):
     # Calculate the effective number of steps to rotate
     k = k % len(nums)
+    
     # Rearrange the elements in the rotated order
     nums[:] = nums[-k:] + nums[:-k]
 
